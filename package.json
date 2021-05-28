@@ -1,0 +1,23 @@
+{
+  "name": "venom-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "concurrently \"cd backend && npm run serve\" \"cd frontend && npm run serve \" ",
+    "build": "concurrently \"cd backend && npm run build\" \"cd frontend && npm run build \" "
+  },
+  "scriptsComments": {
+    "serve": "allows you to start your frontend and backend at the same time in development mode",
+    "build": "allows you to start your frontend and backend at the same time in production mode"
+  },
+  "author": "Jerome Formentera Jr.",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "devDependenciesComments":{
+  "concurrently": "allows you to start both your frontend and backend at the same time."
+  }
+}
